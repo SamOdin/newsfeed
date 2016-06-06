@@ -2,9 +2,9 @@
 
     angular
         .module('chatCtrl', [])
-        .controller('chatCtrl', chatCtrl)
+        .controller('chatCtrl', chatCtrl);
 
         function chatCtrl() {
-
+            var socket = io();
         }
 });

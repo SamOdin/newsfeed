@@ -10,6 +10,7 @@
     "oclazyload": "~1.0.2",
     "angular-loading-bar": "^0.8.0",
     "angular": "^1.5.4",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "socket.io": "^1.4.6"
   }
 }
