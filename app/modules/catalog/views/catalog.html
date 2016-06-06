@@ -1,0 +1,20 @@
+<div class="panel panel-default row">
+
+    <div class="sidebar">
+        <a data-ui-sref="catalog({id: catalog.id})" ui-sref-active="btn-primary" data-ng-repeat="catalog in catalog"
+           class="btn btn-block btn-default btn-lg">[[catalog.title]]</a>
+    </div>
+
+    <div class="content" infinite-scroll="learnMore()" infinite-scroll-distance="3">
+        <div class="col-md-6" data-ng-repeat="article in catalogDir | limitTo: limit">
+            <a data-ui-sref="article({id: article.id})">
+                <h3>
+                    [[article.title]]
+                </h3>
+                <p><img data-ng-src="[[article.image]]" class="catalogImage" /></p>
+                <p>[[article.text | limitTo: 300]] [[article.text.length > 300 ? '...' : '']]</p>
+                <h3><span class="pull-right label label-primary ng-binding">View details &raquo;</span></h3>
+            </a>
+        </div>
+    </div>
+</div>

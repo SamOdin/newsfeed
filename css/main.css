@@ -1,0 +1,118 @@
+.searchImage {
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+}
+.randomImage {
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+    padding-right: 10px;
+}
+.catalogImage {
+    max-height: 100px;
+    max-width: 100px;
+    float: left;
+    padding-right: 10px;
+}
+.articleImage {
+    float: left;
+    padding-right: 10px;
+}
+.searchForm {
+    height: 200px;
+    width: 100%;
+    vertical-align: top;
+}
+.footer {
+    height: 200px;
+    width: 100%;
+}
+.sidebar {
+    width: 200px;
+    text-align: justify;
+    float: left;
+    text-indent: 20px;
+}
+.col-xs-8 {
+    width: calc(100% - 200px);
+}
+
+.col-xs-4{
+    clear: both;
+    float: none;
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+}
+.col-md-6 {
+    clear: both;
+    float: none;
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+}
+.col-md-4 {
+    float: right;
+    width: 200px;
+}
+.content{
+    width: calc(100% - 200px);
+    float: left;
+}
+.searchResult {
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    width: 1000px;
+    margin-left: -500px;
+    background: #fff;
+    border: 1px #F5F5F5 solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+.well {
+    height: 130px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+#chatFrame{
+    width : 200px;
+    height : 200px;
+    position : fixed;
+    z-index : 50;
+    top : 100%;
+    left : 100%;
+    margin-top : -25px;
+    margin-left : -130px;
+    border : 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    -moz-transition:margin 0.3s linear;
+    -o-transition:margin 0.3s linear;
+    -webkit-transition:margin 0.3s linear;
+    -ms-transition:margin 0.3s linear;
+    transition:margin 0.3s linear;
+}
+#chatFrame:hover{
+    margin-top : -272px;
+    margin-left : -400px;
+    -moz-transition:margin 0.3s linear;
+    -o-transition:margin 0.3s linear;
+    -webkit-transition:margin 0.3s linear;
+    -ms-transition:margin 0.3s linear;
+    transition:margin 0.3s linear;
+}
+#chatButton{
+    font-weight : bold;
+    margin-left : 10px;
+    margin-top : -6px;
+    border : 1px solid #717277;
+    border-radius : 0px 0px 10px 10px;
+    text-align : center;
+    width : 100px;
+    margin-bottom : 5px;
+    color : #3CAD4D;
+    background : #717277;
+}

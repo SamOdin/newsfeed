@@ -1,0 +1,12 @@
+<div class="panel panel-default row">
+
+    <div class="sidebar">
+        <a data-ui-sref="catalog({id: catalog.id})" data-ng-repeat="catalog in catalog"
+           class="btn btn-block btn-default btn-lg"
+           data-ng-class="{'btn-primary': catalog.id == article.type}">[[catalog.title]]</a>
+    </div>
+    <div class="content" style="text-indent: 20px">
+        <h1>[[article.title]]</h1>
+        <p><img data-ng-src="[[article.image]]" class="articleImage" />[[article.text]]</div></p>
+    </div>
+</div>

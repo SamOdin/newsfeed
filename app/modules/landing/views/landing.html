@@ -1,0 +1,24 @@
+<div class="panel panel-default row">
+
+    <div class="col-md-4">
+        <h3>Last articles:</h3>
+        <a data-ui-sref="article({id: article.id})" data-ng-repeat="article in randomArticles track by $index">
+            <p><strong>[[article.title]]</strong></p>
+            <p><img data-ng-src="[[article.image]]" class="randomImage" /></p>
+            <p>[[article.text | limitTo: 100]] [[article.text.length > 100 ? '...' : '']]</p>
+        </a>
+    </div>
+    <div class="content">
+        <div class="col-xs-4" data-ng-repeat="randomArticle in randomArticlesForCatalog track by $index">
+            <a data-ui-sref="catalog({id: randomArticle.type})">
+                <h3>[[catalog[$index].title]]</h3>
+                <p><img data-ng-src="[[randomArticle.image]]" class="catalogImage" /></p>
+                <p>[[randomArticle.text | limitTo: 200]] [[randomArticle.text.length > 200 ? '...' : '']]</p>
+                <h3><span class="pull-right label label-primary ng-binding">View details &raquo;</span></h3>
+            </a>
+        </div>
+    </div>
+
+
+
+</div>

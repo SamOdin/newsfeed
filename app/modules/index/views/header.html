@@ -1,0 +1,41 @@
+<div class="navbar navbar-inverse">
+    <a class="navbar-brand" href="/">NEWS FEED.beta</a>
+</div>
+
+<div class="searchForm">
+
+    <div class="container">
+        <h1>Search for articles!</h1>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="sizing-addon1">@</span>
+            <input type="text" placeholder="Search for..." class="form-control"
+                   aria-describedby="sizing-addon1" data-ng-model="search">
+        </div>
+    </div>
+
+    <div class="searchResult" data-ng-model="searchResult" data-ng-show="search">
+        <a data-ui-sref="article({id: article.id})" data-ng-repeat="article in articles | searchFilter: search | limitTo: 5"
+           data-ng-show="search" data-ng-click="clearSearch()">
+        <div class="well">
+            <div class="row-fluid">
+                <p style="font-size: large">
+                    [[article.title]]
+                    <span class="pull-right label label-primary ng-binding">View details &raquo;</span>
+                </p>
+                <p><img data-ng-src="[[article.image]]" class="searchImage" /></p>
+                <p>[[article.text | limitTo: 100]] [[article.text.length > 100 ? '...' : '']]</p>
+            </div>
+        </div>
+        </a>
+
+        <div class="noResult" data-ng-if="search && !searchResult.length">
+            <div class="well">
+                <div class="row-fluid">
+                    <p>NO MORE SEARCH RESULT</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
