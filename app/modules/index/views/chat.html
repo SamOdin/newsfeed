@@ -4,7 +4,7 @@
         <div class="form">
             <h3 class="title">What's your nickname?</h3>
             <input class="usernameInput" type="text" data-ng-model="userName" style="width: 90%" />
-            <button data-ng-click="enterChat()">Submit</button>
+            <button data-ng-click="enterChat()" data-ng-show="userName">Submit</button>
         </div>
     </li>
 
