@@ -6,30 +6,13 @@
 
         function chatCtrl($scope, chatProvider) {
             
-            function createCORSRequest(method, url) {
-                var xhr = new XMLHttpRequest();
-
-                if ("withCredentials" in xhr) {
-                    xhr.open(method, url, true);
-                } else if (typeof XDomainRequest != "undefined") {
-                    xhr = new XDomainRequest();
-                    xhr.open(method, url);
-                } else {
-                    xhr = null;
-                }
-                return xhr;
-            }
-
-            var url = 'http://backend.loc/';
-            var xhr = createCORSRequest('GET', url);
-            xhr.send();
-
-            $scope.message = [];
-
-            chatProvider.on('message', function (data) {
-                $scope.message.push(data.message);
+            $scope.messages = [];
+            
+            chatProvider.on('testMsg', function (data) {
+                $scope.messages.push(data.msg);
             });
 
-            console.log($scope.message);
+            console.log($scope.messages);
+           
         }
 })();
