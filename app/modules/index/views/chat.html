@@ -1,5 +1,5 @@
-[[messages]]
-<ul id="messages"></ul>
+<ul id="messages" data-ng-repeat="msg in messages">[[msg.date]]: [[msg.msg]]</ul>
 <form action="">
-    <input id="m" autocomplete="off" /><button>Send</button>
+    <input id="m" autocomplete="off" data-ng-model="newMessage" />
+    <button data-ng-click="sendMessage()">Send</button>
 </form>

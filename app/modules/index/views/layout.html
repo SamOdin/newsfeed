@@ -2,7 +2,7 @@
 <div class="landing" data-ui-view="landing"></div>
 <div class="footer" data-ng-include="'/app/modules/index/views/footer.html'"></div>
 
-<div id="chatFrame" data-ng-class="{'visible': showChat}">
+<div id="chatFrame" data-ng-class="{'visible': showChat}" data-ng-controller="chatCtrl">
     <label id="chatButton" data-ng-click="showChat = !showChat">CHAT</label>
     <div class="mainChat" data-ng-include="'/app/modules/index/views/chat.html'"></div>
 </div>
