@@ -1,6 +1,6 @@
 {
-  "name": "News feed",
+  "name": "Chat",
   "version": "0.0.1",
-  "description": "News feed project with chat",
+  "description": "my second chat",
   "dependencies": {}
 }

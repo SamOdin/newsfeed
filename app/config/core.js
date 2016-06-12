@@ -1,8 +1,14 @@
 (function () {
 
     angular
-        .module('main', ['ui.router', 'oc.lazyLoad', 'ngResource', 'uiRouterStyles', 'infinite-scroll'])
-        .config(mainConfig)
+        .module('main', ['ui.router',
+            'oc.lazyLoad',
+            'ngResource',
+            'uiRouterStyles',
+            'infinite-scroll',
+            'btford.socket-io'])
+
+        .config(mainConfig);
 
             mainConfig.$inject = [
                 '$interpolateProvider',

@@ -35,6 +35,10 @@ function initModules($ocLazyLoadProvider) {
             name: 'catalogProvider',
             files: ['/app/modules/index/services/catalogProvider.js']
         },
+        {
+            name: 'chatProvider',
+            files: ['/app/modules/index/services/chatProvider.js']
+        },
 
         /*Filters*/
             

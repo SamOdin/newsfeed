@@ -12,7 +12,8 @@ function initStates($stateProvider, $ocLazyLoadProvider) {
                         'articlesProvider', 
                         'catalogProvider', 
                         'searchFilter', 
-                        'chatCtrl'])
+                        'chatCtrl',
+                        'chatProvider'])
                 }
             }
         })
