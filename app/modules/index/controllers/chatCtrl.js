@@ -5,6 +5,8 @@
         .controller('chatCtrl', ['$scope', 'chatProvider', chatCtrl]);
 
         function chatCtrl($scope, chatProvider) {
+            
+            $scope.messages = [];
 
             $scope.enterChat = function () {
                 $scope.userAdded = true;
@@ -12,8 +14,10 @@
                     user: $scope.userName
                 })
             };
-            
-            $scope.messages = [];
+
+            chatProvider.on('greeting', function (data) {
+                $scope.messages.push(data.msg + ' entered the chat.');
+            });
 
             chatProvider.on('testMsg', function (data) {
                 $scope.messages.push(data.path);
@@ -32,11 +36,17 @@
                 console.log($scope.userName);
             };
 
+            window.onbeforeunload = function () {
+                chatProvider.emit('disconnect', {msg: $scope.userName});
+                $scope.userAdded = false;
+                $scope.userName = null;
+            };
+
             chatProvider.on('userLeft', function () {
                 $scope.messages.push($scope.userName + ' left chat!');
             })
 
-            
+
            
         }
 })();

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9307e63-2900-47c5-8264-1a3ad07e58dd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/index/controllers/chatCtrl.js" afterPath="$PROJECT_DIR$/app/modules/index/controllers/chatCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/index/views/chat.html" afterPath="$PROJECT_DIR$/app/modules/index/views/chat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
     </list>
     <ignored path="newsfeed.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +39,8 @@
       <file leaf-file-name="chatCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/modules/index/controllers/chatCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="891">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -418,12 +415,12 @@
       <workItem from="1465286706254" duration="3200000" />
       <workItem from="1465464531241" duration="52000" />
       <workItem from="1465658923154" duration="13214000" />
-      <workItem from="1465713067276" duration="18366000" />
+      <workItem from="1465713067276" duration="20116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41797000" />
+    <option name="totallyTimeSpent" value="43547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/index/controllers/chatCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="891">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding />
         </state>
       </provider>
