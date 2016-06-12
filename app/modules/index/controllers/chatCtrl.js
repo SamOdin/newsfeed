@@ -5,6 +5,10 @@
         .controller('chatCtrl', ['$scope', 'chatProvider', chatCtrl]);
 
         function chatCtrl($scope, chatProvider) {
+
+            $scope.enterChat = function () {
+                $scope.userAdded = true;
+            };
             
             $scope.messages = [];
 
@@ -17,8 +21,13 @@
             });
 
             $scope.sendMessage = function () {
-                chatProvider.emit('send', {msg: $scope.newMessage})
+                chatProvider.emit('send', {msg: $scope.newMessage});
+                console.log($scope.newMessage);
             };
+
+            chatProvider.on('userLeft', function () {
+                $scope.messages.push($scope.userName + ' left chat!');
+            })
            
         }
 })();

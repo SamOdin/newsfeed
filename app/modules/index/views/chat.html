@@ -1,5 +1,19 @@
-<ul id="messages" data-ng-repeat="msg in messages">[[msg.date]]: [[msg.msg]]</ul>
-<form action="" onsubmit='return false;'>
-    <input id="m" autocomplete="off" data-ng-model="newMessage" />
-    <button data-ng-click="sendMessage()">Send</button>
-</form>
+<div data-ng-controller="chatCtrl">
+
+    <li class="login page" data-ng-show="!userAdded">
+        <div class="form">
+            <h3 class="title">What's your nickname?</h3>
+            <input class="usernameInput" type="text" data-ng-model="userName" style="width: 90%" />
+            <button data-ng-click="enterChat()">Submit</button>
+        </div>
+    </li>
+
+    <ul id="messages" data-ng-repeat="msg in messages" data-ng-show="userAdded">
+        [[msg.date]]: [[msg.msg]]
+    </ul>
+
+    <form action="" onsubmit='return false;' data-ng-show="userAdded">
+        <input id="m" autocomplete="off" data-ng-model="newMessage" placeholder="Type here..." />
+        <button data-ng-click="sendMessage()">Send</button>
+    </form>
+</div>
